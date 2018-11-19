@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="no-transition stretched">
+<body <?php body_class('no-transition stretched'); ?> >
 
 <!-- Document Wrapper
 ============================================= -->
