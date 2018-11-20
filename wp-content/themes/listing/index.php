@@ -1,6 +1,4 @@
 <?php get_header();?>
-  <!-- Content
-    ============================================= -->
   <section id="content">
 
     <div class="content-wrap">
@@ -22,7 +20,6 @@
           </div>
         </div>
       </div>
-
       <div class="container clearfix">
 
         <!-- Post Content
@@ -61,8 +58,6 @@
 
           </div><!-- #posts end -->
 
-          <!-- Pagination
-                    ============================================= -->
           <ul class="pager nomargin">
             <li class="previous"><?php previous_posts_link('&larr; Previous');?></li>
             <li class="next"><?php next_posts_link('Next &rarr;');?></li>
@@ -73,11 +68,6 @@
         <?php get_sidebar(); ?>
 
       </div>
-
     </div>
-
-  </section><!-- #content end -->
-
-  <!-- Footer
-    ============================================= -->
+</section>
 <?php get_footer();?>
