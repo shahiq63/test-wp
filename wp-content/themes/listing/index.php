@@ -49,7 +49,7 @@
                   <li><a href=<?php the_permalink();?>><i class="icon-comments"></i><?php comments_number('0')?></a></li>
                 </ul>
                 <div class="entry-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, asperiores quod est tenetur in. Eligendi, deserunt, blanditiis est quisquam doloribus voluptate id aperiam ea ipsum magni aut perspiciatis rem voluptatibus officia eos rerum deleniti quae nihil facilis repellat atque vitae voluptatem libero at eveniet veritatis ab facere.</p>
+                  <p><?php the_excerpt();?></p>
                   <a href=<?php the_permalink();?> class="more-link">Read More</a>
                 </div>
               </div>
@@ -64,8 +64,8 @@
           <!-- Pagination
                     ============================================= -->
           <ul class="pager nomargin">
-            <li class="previous"><a href="#">&larr; Older</a></li>
-            <li class="next"><a href="#">Newer &rarr;</a></li>
+            <li class="previous"><?php previous_posts_link('&larr; Previous');?></li>
+            <li class="next"><?php next_posts_link('Next &rarr;');?></li>
           </ul><!-- .pager end -->
 
         </div><!-- .postcontent end -->
