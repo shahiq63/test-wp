@@ -5,8 +5,9 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <link rel="icon" type="image/png" href="images/favicon.png">
   <!-- Stylesheets
+    For loading style sheets
   ============================================= -->
- <?php wp_head();?>
+ <?php wp_head();?> 
 
   <!-- Document Title
   ============================================= -->
@@ -78,24 +79,18 @@
     </div>
 
     <div id="header-wrap">
-
-      <!-- Primary Navigation
-            ============================================= -->
       <nav id="primary-menu" class="style-2">
-
         <div class="container clearfix">
-
           <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-          <?php 
-
-              if(has_nav_menu('primary')) {
-                wp_nav_menu(array(
-                  'theme_location' =>'primary',
-                  'container'=>false,
-                  'fallback'=>false,
-                  'depth'=>4
-                ));
-              }
+          <?php
+            if(has_nav_menu('primary')) {
+              wp_nav_menu(array(
+                'theme_location' =>'primary',
+                'container'=>false,
+                'fallback'=>false,
+                'depth'=>4
+              ));
+          }
           ?>
           <!-- Top Cart
             ============================================= -->
