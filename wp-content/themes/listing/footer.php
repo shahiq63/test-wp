@@ -37,8 +37,6 @@
   </footer><!-- #footer end -->
 
 </div><!-- #wrapper end -->
-
-============================================= -->
 <div id="gotoTop" class="icon-angle-up"></div>
 
 <?php wp_footer();?>
