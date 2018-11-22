@@ -1,6 +1,9 @@
 <?php get_header();?>
   <section id="content">
-    <div class="content-wrap"></div>
+
+    <div class="content-wrap">
+        <?php get_sidebar(); ?>
+    </div>
     <div class="container clearfix">
       <div class="postcontent nobottommargin clearfix">
         <div class="single-post nobottommargin">
@@ -18,7 +21,7 @@
                 <ul class="entry-meta clearfix">
                   <li><i class="icon-calendar3"></i> <?php echo get_the_date();?></li>
                   <li><a href=<?php echo $author_URL;?>><i class="icon-user"></i> <?php the_author();?></a></li>
-                  <li><i class="icon-folder-open"><?php the_category();?></li>
+                  <li><i class="icon-folder-open"></i><?php the_category(' ');?></li>
                   <li><a href="#"><i class="icon-comments"></i> <?php comments_number('0');?></a></li>
                 </ul>
                 <div class="entry-image">
@@ -104,8 +107,10 @@
           }
           ?>
         </div>
-        <?php get_sidebar(); ?>   
+   
       </div>
+
     </div>
+
   </section>
   <?php get_footer();?>
