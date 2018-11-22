@@ -5,7 +5,10 @@
     <section id="page-title">
       <div class="container clearfix">
         <h1><?php the_title();?></h1>
-        <span><?php the_subtitle(); ?></span>
+        <?php if(function_exists('the_subtitle')):?> 
+          <span><?php the_subtitle(); ?></span>
+        <?php endif;?>  
+
       </div>
     </section>
     <?php
