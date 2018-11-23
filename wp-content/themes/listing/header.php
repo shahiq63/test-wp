@@ -7,37 +7,34 @@
   <!-- Stylesheets
     For loading style sheets
   ============================================= -->
- <?php wp_head();?> 
+ <?php wp_head();?>
 
-  <!-- Document Title
-  ============================================= -->
-  <title>Index Template</title>
+ <title>Index Template</title>
 
 </head>
 
 <body <?php body_class('no-transition stretched'); ?> >
 
-<!-- Document Wrapper
-============================================= -->
 <div id="wrapper" class="clearfix">
   <!-- Top Bar
     ============================================= -->
   <div id="top-bar" class="dark">
-
     <div class="container clearfix">
-
       <div class="col_half nobottommargin">
-
         <!-- Top Links
                 ============================================= -->
         <div class="top-links">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="faqs.html">FAQs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+          <?php
+            if(has_nav_menu('secondary')) {
+              wp_nav_menu(array(
+                'theme_location' =>'secondary',
+                'container'=>false,
+                'fallback'=>false,
+                'depth'=>4
+              ));
+          }
+          ?>
         </div><!-- .top-links end -->
-
       </div>
 
       <div class="col_half fright col_last nobottommargin">
@@ -63,17 +60,25 @@
   <!-- Header
     ============================================= -->
   <header id="header" class="sticky-style-2">
-
     <div class="container clearfix">
-
-      <!-- Logo
-            ============================================= -->
       <div id="logo">
-        <a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png">Udemy</a>
-      </div><!-- #logo end -->
+        <?php
+          if(has_custom_logo()) {
+            the_custom_logo();
+          }else {
+            ?>
+            <a href="<?php echo home_url('/');?>" class="standard-logo"><?php bloginfo('name');?></a> <?php
+          }
+          ?>
+      </div>
 
       <div class="top-advert">
-        <img src="images/magazine/ad.jpg" alt="Ad">
+        <?php
+          if(function_exists('quads_ad')) {
+            echo do_shortcode('[quads id=1]');
+          }
+
+        ?>
       </div>
 
     </div>
