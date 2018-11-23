@@ -13723,3 +13723,6 @@ a img.aligncenter {
 .single .content-wrap{
   padding: 22px;
 }
+#respond, #respond form {
+    margin-bottom: 20px;
+}
