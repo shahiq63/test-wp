@@ -2,7 +2,7 @@
 
 function ju_misc_customizer_section($wp_customize) {
 
-  //$wp_customize->get_section('title_tagline'); -> It will help to change the default settings.
+  //$wp_customize->get_section('title_tagline'); -> It will help to change the default settings
 
   $wp_customize->add_panel('test-wp',array(
     'title'=> __('Header and Footer Panel','listing'),
