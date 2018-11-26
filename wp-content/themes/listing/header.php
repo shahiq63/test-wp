@@ -69,7 +69,7 @@
               <?php
               if(get_theme_mod('ju_phone_handle')) {
               ?>
-               <li><a  class="si-call"><span class="ts-icon"><i class="icon-call"></i></span><span class="ts-text"><?php echo get_theme_mod('ju_phone_handle');?></span></a></li>
+               <li><a class="si-call"><span class="ts-icon"><i class="icon-call"></i></span><span class="ts-text"><?php echo get_theme_mod('ju_phone_handle');?></span></a></li>
               <?php
                 }
               ?>
@@ -131,12 +131,17 @@
           ?>
           <!-- Top Cart
             ============================================= -->
-          <div id="top-cart">
-            <a href="#" id="top-cart-trigger"><i class="icon-shopping-cart"></i><span>5</span></a>
-            <div class="top-cart-content">
-              <div class="top-cart-title">
+
+
+            <?php
+              if(get_theme_mod('ju_header_show_cart')=="yes") {
+             ?>
+             <div id="top-cart">
+              <a href="#" id="top-cart-trigger"><i class="icon-shopping-cart"></i><span>5</span></a>
+              <div class="top-cart-content">
+                <div class="top-cart-title">
                 <h4>Shopping Cart</h4>
-              </div>
+                </div>
               <div class="top-cart-items">
                 <div class="top-cart-item clearfix">
                   <div class="top-cart-item-image">
@@ -164,21 +169,23 @@
                 <button class="button button-3d button-small nomargin fright">View Cart</button>
               </div>
             </div>
-          </div><!-- #top-cart end -->
-
-          <!-- Top Search
-                    ============================================= -->
+          </div>
+          <?php
+        }
+        ?>
+        <?php
+        if(get_theme_mod('ju_header_show_search')=="yes") {
+          ?>
           <div id="top-search">
             <a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
-            <form action="search.html" method="get">
-              <input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
+            <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
+              <input type="text" name="q" class="form-control" value="<?php the_search_query(); ?>" placeholder="Type &amp; Hit Enter..">
             </form>
-          </div><!-- #top-search end -->
-
+          </div>
+          <?php
+        }
+        ?>
         </div>
-
       </nav><!-- #primary-menu end -->
-
     </div>
-
-  </header><!-- #header end -->
+ </header>
