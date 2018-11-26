@@ -1,6 +1,15 @@
 <?php
 
 function ju_misc_customizer_section($wp_customize) {
+
+  //$wp_customize->get_section('title_tagline'); -> It will help to change the default settings.
+
+  $wp_customize->add_panel('test-wp',array(
+    'title'=> __('Header and Footer Panel','listing'),
+    'description'=> '<p>Listing Theme Panel Settings</p>',
+    'priority'=> 160,
+
+  ));
   $wp_customize->add_setting('ju_header_show_search',array(
     'default' =>'yes',
   ));
@@ -23,7 +32,8 @@ function ju_misc_customizer_section($wp_customize) {
 
   $wp_customize->add_section('ju_misc_section',array(
     'title'=>__('Misc Settings','Test-wp'),
-    'priority'=>30
+    'priority'=>30,
+    'panel'=>'test-wp',
   ));
 
   $wp_customize->add_control(
@@ -91,5 +101,4 @@ function ju_misc_customizer_section($wp_customize) {
             'type'           => 'dropdown-pages',
         )
     ));
-
 }

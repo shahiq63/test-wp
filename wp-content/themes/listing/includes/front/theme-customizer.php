@@ -18,7 +18,8 @@ function ju_customize_register($wp_customize) {
   ));
   $wp_customize->add_section('ju_social_section',array(
     'title'=>__('Social Links Settings','Test-wp'),
-    'priority'=>30
+    'priority'=>30,
+    'panel'=>'test-wp',
   ));
   $wp_customize->add_control(
     new WP_Customize_Control(
