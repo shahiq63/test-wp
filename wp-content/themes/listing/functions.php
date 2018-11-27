@@ -16,4 +16,5 @@ add_action('after_setup_theme','ju_setup_theme');
 add_action('widgets_init','ju_widgets');
 add_action('customize_register','ju_customize_register');
 add_action('customize_register','ju_misc_customizer_section');
+
 //ShortCodes
