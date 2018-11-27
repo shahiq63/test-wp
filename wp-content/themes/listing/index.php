@@ -29,8 +29,9 @@
            <?php if(have_posts()) {
             while (have_posts()) {
               the_post();
+              include(get_template_directory(). '/partials/post/content-excerpt.php');
               ?>
-              <div class="entry clearfix">
+              <!-- <div class="entry clearfix">
                 <div class="entry-image">
                   <a href=<?php the_permalink();?> data-lightbox="image">
                     <?php the_post_thumbnail('full',array('class'=>'image_fade'));?>
@@ -49,7 +50,8 @@
                   <p><?php the_excerpt();?></p>
                   <a href=<?php the_permalink();?> class="more-link">Read More</a>
                 </div>
-              </div>
+              </div> -->
+
           <?php
         }
 
