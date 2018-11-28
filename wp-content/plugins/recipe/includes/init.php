@@ -30,7 +30,7 @@ function recipe_init() {
     'has_archive'        => true,
     'hierarchical'       => false,
     'menu_position'      => 20,
-    'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+    'supports'           => array( 'title', 'editor', 'author', 'thumbnail'),
     'taxonomies'         => array('category','post_tag')
   );
 
