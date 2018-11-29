@@ -2,6 +2,17 @@
 
 function r_recipe_options_mb($post) {
   $recipe_data = get_post_meta($post->ID,'recipe_data',true);
+
+  if(empty($recipe_data)) {
+    $recipe_data =array(
+      'ingredients'=>'',
+      'time'=>'',
+      'utensils'=>'',
+      'level'=>'Beginner',
+      'meal_type'=>''
+    );
+  }
+
   ?>
   <div class="form-group">
     <label>Ingredients</label>
