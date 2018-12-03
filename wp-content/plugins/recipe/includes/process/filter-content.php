@@ -16,6 +16,7 @@ function r_filter_recipe_content($content) {
   $recipe_html = str_replace('UTENSILS_PH', $recipe_data["utensils"], $recipe_html);
   $recipe_html = str_replace('LEVEL_PH', $recipe_data["level"], $recipe_html);
   $recipe_html = str_replace('TYPE_PH', $recipe_data["meal_type"], $recipe_html);
+  $recipe_html = str_replace('RECIPE_ID',$post->ID ,$recipe_html);
 
   return $content.$recipe_html;
 }
