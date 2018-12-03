@@ -29,6 +29,7 @@ include ('includes/widgets/daily-recipe.php');
 include ('includes/cron.php');
 include ('includes/deactivate.php');
 include ('includes/shortcodes/creater.php');
+include ('includes/process/submit-user-recipe.php');
 
 //Hooks
 
@@ -44,6 +45,8 @@ add_action('wp_ajax_r_rate_recipe','r_rate_recipe');
 add_action('wp_ajax_nopriv_r_rate_recipe','r_rate_recipe');
 add_action('widgets_init','r_widgets_init');
 add_action('r_daily_recipe_hook','r_generate_daily_recipe');
+add_action( 'wp_ajax_r_submit_user_recipe', 'r_submit_user_recipe' );
+add_action( 'wp_ajax_nopriv_r_submit_user_recipe', 'r_submit_user_recipe' );
 
 //ShortCodes
 
