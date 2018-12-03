@@ -21,12 +21,15 @@ include ('includes/activate.php');
 include ('includes/init.php');
 include ('includes/admin/init.php');
 include ('includes/process/save-post.php');
+include ('includes/process/filter-content.php');
+
 //Hooks
 
 register_activation_hook(__FILE__,'r_activate_plugin');
 add_action('init','recipe_init');
 add_action('admin_init','recipe_admin_init');
 add_action('save_post_recipe','r_save_post_recipe',10,3);
+add_action('the_content','r_filter_recipe_content');
 
 
 //ShortCodes

@@ -1,0 +1,3454 @@
+$data = array(
+  'bundles' => array(
+    'post_secondary_pd' => (object) array(
+      'type' => 'post_secondary_pd',
+      'name' => 'Post Secondary PD',
+      'base' => 'node_content',
+      'module' => 'hriaweb_events',
+      'description' => '',
+      'help' => '',
+      'has_title' => '1',
+      'title_label' => 'Title',
+      'custom' => '0',
+      'modified' => '1',
+      'locked' => '1',
+      'disabled' => FALSE,
+      'orig_type' => 'post_secondary_pd',
+      'disabled_changed' => FALSE,
+      'bc_entity_type' => 'node',
+    ),
+  ),
+  'fields' => array(
+    'body' => array(
+      'entity_types' => array(
+        0 => 'node',
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'settings' => array(),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_body' => array(
+                'value' => 'body_value',
+                'summary' => 'body_summary',
+                'format' => 'body_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_body' => array(
+                'value' => 'body_value',
+                'summary' => 'body_summary',
+                'format' => 'body_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'field_name' => 'body',
+      'type' => 'text_with_summary',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'text',
+          'size' => 'big',
+          'not null' => FALSE,
+        ),
+        'summary' => array(
+          'type' => 'text',
+          'size' => 'big',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'page',
+          1 => 'slider',
+          2 => 'home_tabs',
+          3 => 'news',
+          4 => 'publications',
+          5 => 'partners_tabs',
+          6 => 'faq',
+          7 => 'activitystream_item',
+          8 => 'learn_connect',
+          9 => 'photos_and_videos',
+          10 => 'testimonial',
+          11 => 'membership',
+          12 => 'directors',
+          13 => 'team',
+          14 => 'research',
+          15 => 'awards',
+          16 => 'dir_listing',
+          17 => 'membership_directory',
+          18 => 'hr_experts',
+          19 => 'hria_articles',
+          20 => 'book',
+          21 => 'new_slider',
+          22 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_choose_options_learnconnec' => array(
+      'entity_types' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'settings' => array(
+        'allowed_values' => array(
+          'biweekly' => 'biweekly',
+          'customtext' => 'custom text',
+          'day' => 'day',
+          'month' => 'month',
+          'multipledays' => 'multiple days',
+          'weekly' => 'weekly',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_choose_options_learnconnec' => array(
+                'value' => 'field_choose_options_learnconnec_value',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_choose_options_learnconnec' => array(
+                'value' => 'field_choose_options_learnconnec_value',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'field_name' => 'field_choose_options_learnconnec',
+      'type' => 'list_text',
+      'module' => 'list',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_custom_text' => array(
+      'entity_types' => array(),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'settings' => array(
+        'max_length' => 255,
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_custom_text' => array(
+                'value' => 'field_custom_text_value',
+                'format' => 'field_custom_text_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_custom_text' => array(
+                'value' => 'field_custom_text_value',
+                'format' => 'field_custom_text_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'field_name' => 'field_custom_text',
+      'type' => 'text',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_date_biweekly' => array(
+      'entity_types' => array(),
+      'indexes' => array(),
+      'settings' => array(
+        'cache_count' => 4,
+        'cache_enabled' => 0,
+        'granularity' => array(
+          'day' => 'day',
+          'hour' => 'hour',
+          'minute' => 'minute',
+          'month' => 'month',
+          'second' => 0,
+          'year' => 'year',
+        ),
+        'timezone_db' => 'UTC',
+        'todate' => 'optional',
+        'tz_handling' => 'site',
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_date_biweekly' => array(
+                'value' => 'field_date_biweekly_value',
+                'value2' => 'field_date_biweekly_value2',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_date_biweekly' => array(
+                'value' => 'field_date_biweekly_value',
+                'value2' => 'field_date_biweekly_value2',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'field_name' => 'field_date_biweekly',
+      'type' => 'datetime',
+      'module' => 'date',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'datetime',
+          'mysql_type' => 'datetime',
+          'pgsql_type' => 'timestamp without time zone',
+          'sqlite_type' => 'varchar',
+          'sqlsrv_type' => 'smalldatetime',
+          'not null' => FALSE,
+          'sortable' => TRUE,
+          'views' => TRUE,
+        ),
+        'value2' => array(
+          'type' => 'datetime',
+          'mysql_type' => 'datetime',
+          'pgsql_type' => 'timestamp without time zone',
+          'sqlite_type' => 'varchar',
+          'sqlsrv_type' => 'smalldatetime',
+          'not null' => FALSE,
+          'sortable' => TRUE,
+          'views' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_date_multipledays' => array(
+      'entity_types' => array(),
+      'indexes' => array(),
+      'settings' => array(
+        'cache_count' => 4,
+        'cache_enabled' => 0,
+        'granularity' => array(
+          'day' => 'day',
+          'hour' => 'hour',
+          'minute' => 'minute',
+          'month' => 'month',
+          'second' => 0,
+          'year' => 'year',
+        ),
+        'timezone_db' => 'UTC',
+        'todate' => 'optional',
+        'tz_handling' => 'site',
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_date_multipledays' => array(
+                'value' => 'field_date_multipledays_value',
+                'value2' => 'field_date_multipledays_value2',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_date_multipledays' => array(
+                'value' => 'field_date_multipledays_value',
+                'value2' => 'field_date_multipledays_value2',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'field_name' => 'field_date_multipledays',
+      'type' => 'datetime',
+      'module' => 'date',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'datetime',
+          'mysql_type' => 'datetime',
+          'pgsql_type' => 'timestamp without time zone',
+          'sqlite_type' => 'varchar',
+          'sqlsrv_type' => 'smalldatetime',
+          'not null' => FALSE,
+          'sortable' => TRUE,
+          'views' => TRUE,
+        ),
+        'value2' => array(
+          'type' => 'datetime',
+          'mysql_type' => 'datetime',
+          'pgsql_type' => 'timestamp without time zone',
+          'sqlite_type' => 'varchar',
+          'sqlsrv_type' => 'smalldatetime',
+          'not null' => FALSE,
+          'sortable' => TRUE,
+          'views' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_date_weekly' => array(
+      'entity_types' => array(),
+      'indexes' => array(),
+      'settings' => array(
+        'cache_count' => 4,
+        'cache_enabled' => 0,
+        'granularity' => array(
+          'day' => 'day',
+          'hour' => 'hour',
+          'minute' => 'minute',
+          'month' => 'month',
+          'second' => 0,
+          'year' => 'year',
+        ),
+        'timezone_db' => 'UTC',
+        'todate' => 'required',
+        'tz_handling' => 'site',
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_date_weekly' => array(
+                'value' => 'field_date_weekly_value',
+                'value2' => 'field_date_weekly_value2',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_date_weekly' => array(
+                'value' => 'field_date_weekly_value',
+                'value2' => 'field_date_weekly_value2',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'field_name' => 'field_date_weekly',
+      'type' => 'datetime',
+      'module' => 'date',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'datetime',
+          'mysql_type' => 'datetime',
+          'pgsql_type' => 'timestamp without time zone',
+          'sqlite_type' => 'varchar',
+          'sqlsrv_type' => 'smalldatetime',
+          'not null' => FALSE,
+          'sortable' => TRUE,
+          'views' => TRUE,
+        ),
+        'value2' => array(
+          'type' => 'datetime',
+          'mysql_type' => 'datetime',
+          'pgsql_type' => 'timestamp without time zone',
+          'sqlite_type' => 'varchar',
+          'sqlsrv_type' => 'smalldatetime',
+          'not null' => FALSE,
+          'sortable' => TRUE,
+          'views' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_day1' => array(
+      'entity_types' => array(),
+      'indexes' => array(),
+      'settings' => array(
+        'cache_count' => 4,
+        'cache_enabled' => 0,
+        'granularity' => array(
+          'day' => 'day',
+          'hour' => 'hour',
+          'minute' => 'minute',
+          'month' => 'month',
+          'second' => 0,
+          'year' => 'year',
+        ),
+        'timezone_db' => 'UTC',
+        'todate' => 'optional',
+        'tz_handling' => 'utc',
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_day1' => array(
+                'value' => 'field_day1_value',
+                'value2' => 'field_day1_value2',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_day1' => array(
+                'value' => 'field_day1_value',
+                'value2' => 'field_day1_value2',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'field_name' => 'field_day1',
+      'type' => 'datetime',
+      'module' => 'date',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'datetime',
+          'mysql_type' => 'datetime',
+          'pgsql_type' => 'timestamp without time zone',
+          'sqlite_type' => 'varchar',
+          'sqlsrv_type' => 'smalldatetime',
+          'not null' => FALSE,
+          'sortable' => TRUE,
+          'views' => TRUE,
+        ),
+        'value2' => array(
+          'type' => 'datetime',
+          'mysql_type' => 'datetime',
+          'pgsql_type' => 'timestamp without time zone',
+          'sqlite_type' => 'varchar',
+          'sqlsrv_type' => 'smalldatetime',
+          'not null' => FALSE,
+          'sortable' => TRUE,
+          'views' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_event_script' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_event_script' => array(
+                'value' => 'field_event_script_value',
+                'format' => 'field_event_script_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_event_script' => array(
+                'value' => 'field_event_script_value',
+                'format' => 'field_event_script_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'field_event_script',
+      'type' => 'text',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => '255',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_events_thumbnails' => array(
+      'entity_types' => array(),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'settings' => array(
+        'default_image' => 0,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_events_thumbnails' => array(
+                'fid' => 'field_events_thumbnails_fid',
+                'alt' => 'field_events_thumbnails_alt',
+                'title' => 'field_events_thumbnails_title',
+                'width' => 'field_events_thumbnails_width',
+                'height' => 'field_events_thumbnails_height',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_events_thumbnails' => array(
+                'fid' => 'field_events_thumbnails_fid',
+                'alt' => 'field_events_thumbnails_alt',
+                'title' => 'field_events_thumbnails_title',
+                'width' => 'field_events_thumbnails_width',
+                'height' => 'field_events_thumbnails_height',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'fid' => array(
+          'table' => 'file_managed',
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+        ),
+      ),
+      'field_name' => 'field_events_thumbnails',
+      'type' => 'image',
+      'module' => 'image',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'fid' => array(
+          'description' => 'The {file_managed}.fid being referenced in this field.',
+          'type' => 'int',
+          'not null' => FALSE,
+          'unsigned' => TRUE,
+        ),
+        'alt' => array(
+          'description' => 'Alternative image text, for the image\'s \'alt\' attribute.',
+          'type' => 'varchar',
+          'length' => 512,
+          'not null' => FALSE,
+        ),
+        'title' => array(
+          'description' => 'Image title text, for the image\'s \'title\' attribute.',
+          'type' => 'varchar',
+          'length' => 1024,
+          'not null' => FALSE,
+        ),
+        'width' => array(
+          'description' => 'The width of the image in pixels.',
+          'type' => 'int',
+          'unsigned' => TRUE,
+        ),
+        'height' => array(
+          'description' => 'The height of the image in pixels.',
+          'type' => 'int',
+          'unsigned' => TRUE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_learn_connect_body_images' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'uri_scheme' => 'public',
+        'default_image' => 0,
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_learn_connect_body_images' => array(
+                'fid' => 'field_learn_connect_body_images_fid',
+                'alt' => 'field_learn_connect_body_images_alt',
+                'title' => 'field_learn_connect_body_images_title',
+                'width' => 'field_learn_connect_body_images_width',
+                'height' => 'field_learn_connect_body_images_height',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_learn_connect_body_images' => array(
+                'fid' => 'field_learn_connect_body_images_fid',
+                'alt' => 'field_learn_connect_body_images_alt',
+                'title' => 'field_learn_connect_body_images_title',
+                'width' => 'field_learn_connect_body_images_width',
+                'height' => 'field_learn_connect_body_images_height',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'fid' => array(
+          'table' => 'file_managed',
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'field_name' => 'field_learn_connect_body_images',
+      'type' => 'image',
+      'module' => 'image',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'columns' => array(
+        'fid' => array(
+          'description' => 'The {file_managed}.fid being referenced in this field.',
+          'type' => 'int',
+          'not null' => FALSE,
+          'unsigned' => TRUE,
+        ),
+        'alt' => array(
+          'description' => 'Alternative image text, for the image\'s \'alt\' attribute.',
+          'type' => 'varchar',
+          'length' => 512,
+          'not null' => FALSE,
+        ),
+        'title' => array(
+          'description' => 'Image title text, for the image\'s \'title\' attribute.',
+          'type' => 'varchar',
+          'length' => 1024,
+          'not null' => FALSE,
+        ),
+        'width' => array(
+          'description' => 'The width of the image in pixels.',
+          'type' => 'int',
+          'unsigned' => TRUE,
+        ),
+        'height' => array(
+          'description' => 'The height of the image in pixels.',
+          'type' => 'int',
+          'unsigned' => TRUE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_learn_connect_category' => array(
+      'entity_types' => array(),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'learn_connect_category',
+            'parent' => 0,
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_learn_connect_category' => array(
+                'tid' => 'field_learn_connect_category_tid',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_learn_connect_category' => array(
+                'tid' => 'field_learn_connect_category_tid',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'tid' => array(
+          'table' => 'taxonomy_term_data',
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+        ),
+      ),
+      'field_name' => 'field_learn_connect_category',
+      'type' => 'taxonomy_term_reference',
+      'module' => 'taxonomy',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'tid' => array(
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_learn_connect_cost' => array(
+      'entity_types' => array(),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'settings' => array(
+        'max_length' => 255,
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_learn_connect_cost' => array(
+                'value' => 'field_learn_connect_cost_value',
+                'format' => 'field_learn_connect_cost_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_learn_connect_cost' => array(
+                'value' => 'field_learn_connect_cost_value',
+                'format' => 'field_learn_connect_cost_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'field_name' => 'field_learn_connect_cost',
+      'type' => 'text',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_learn_connect_date' => array(
+      'entity_types' => array(),
+      'indexes' => array(),
+      'settings' => array(
+        'cache_count' => 4,
+        'cache_enabled' => 0,
+        'granularity' => array(
+          'day' => 'day',
+          'hour' => 0,
+          'minute' => 0,
+          'month' => 'month',
+          'second' => 0,
+          'year' => 'year',
+        ),
+        'timezone_db' => '',
+        'todate' => '',
+        'tz_handling' => 'none',
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_learn_connect_date' => array(
+                'value' => 'field_learn_connect_date_value',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_learn_connect_date' => array(
+                'value' => 'field_learn_connect_date_value',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'field_name' => 'field_learn_connect_date',
+      'type' => 'datetime',
+      'module' => 'date',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'datetime',
+          'mysql_type' => 'datetime',
+          'pgsql_type' => 'timestamp without time zone',
+          'sqlite_type' => 'varchar',
+          'sqlsrv_type' => 'smalldatetime',
+          'not null' => FALSE,
+          'sortable' => TRUE,
+          'views' => TRUE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_learn_connect_event_type' => array(
+      'entity_types' => array(),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'learn_connect_type',
+            'parent' => 0,
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_learn_connect_event_type' => array(
+                'tid' => 'field_learn_connect_event_type_tid',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_learn_connect_event_type' => array(
+                'tid' => 'field_learn_connect_event_type_tid',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'tid' => array(
+          'table' => 'taxonomy_term_data',
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+        ),
+      ),
+      'field_name' => 'field_learn_connect_event_type',
+      'type' => 'taxonomy_term_reference',
+      'module' => 'taxonomy',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'tid' => array(
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_learn_connect_file' => array(
+      'entity_types' => array(),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'settings' => array(
+        'display_default' => 0,
+        'display_field' => 0,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_learn_connect_file' => array(
+                'fid' => 'field_learn_connect_file_fid',
+                'display' => 'field_learn_connect_file_display',
+                'description' => 'field_learn_connect_file_description',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_learn_connect_file' => array(
+                'fid' => 'field_learn_connect_file_fid',
+                'display' => 'field_learn_connect_file_display',
+                'description' => 'field_learn_connect_file_description',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'fid' => array(
+          'table' => 'file_managed',
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+        ),
+      ),
+      'field_name' => 'field_learn_connect_file',
+      'type' => 'file',
+      'module' => 'file',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'fid' => array(
+          'description' => 'The {file_managed}.fid being referenced in this field.',
+          'type' => 'int',
+          'not null' => FALSE,
+          'unsigned' => TRUE,
+        ),
+        'display' => array(
+          'description' => 'Flag to control whether this file should be displayed when viewing content.',
+          'type' => 'int',
+          'size' => 'tiny',
+          'unsigned' => TRUE,
+          'not null' => TRUE,
+          'default' => 1,
+        ),
+        'description' => array(
+          'description' => 'A description of the file.',
+          'type' => 'text',
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_learn_connect_image' => array(
+      'entity_types' => array(),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'settings' => array(
+        'default_image' => 0,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_learn_connect_image' => array(
+                'fid' => 'field_learn_connect_image_fid',
+                'alt' => 'field_learn_connect_image_alt',
+                'title' => 'field_learn_connect_image_title',
+                'width' => 'field_learn_connect_image_width',
+                'height' => 'field_learn_connect_image_height',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_learn_connect_image' => array(
+                'fid' => 'field_learn_connect_image_fid',
+                'alt' => 'field_learn_connect_image_alt',
+                'title' => 'field_learn_connect_image_title',
+                'width' => 'field_learn_connect_image_width',
+                'height' => 'field_learn_connect_image_height',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'fid' => array(
+          'table' => 'file_managed',
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+        ),
+      ),
+      'field_name' => 'field_learn_connect_image',
+      'type' => 'image',
+      'module' => 'image',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'fid' => array(
+          'description' => 'The {file_managed}.fid being referenced in this field.',
+          'type' => 'int',
+          'not null' => FALSE,
+          'unsigned' => TRUE,
+        ),
+        'alt' => array(
+          'description' => 'Alternative image text, for the image\'s \'alt\' attribute.',
+          'type' => 'varchar',
+          'length' => 512,
+          'not null' => FALSE,
+        ),
+        'title' => array(
+          'description' => 'Image title text, for the image\'s \'title\' attribute.',
+          'type' => 'varchar',
+          'length' => 1024,
+          'not null' => FALSE,
+        ),
+        'width' => array(
+          'description' => 'The width of the image in pixels.',
+          'type' => 'int',
+          'unsigned' => TRUE,
+        ),
+        'height' => array(
+          'description' => 'The height of the image in pixels.',
+          'type' => 'int',
+          'unsigned' => TRUE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_learn_connect_location' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_learn_connect_location' => array(
+                'value' => 'field_learn_connect_location_value',
+                'format' => 'field_learn_connect_location_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_learn_connect_location' => array(
+                'value' => 'field_learn_connect_location_value',
+                'format' => 'field_learn_connect_location_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'field_learn_connect_location',
+      'type' => 'text',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => '255',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_learn_connect_month' => array(
+      'entity_types' => array(),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'learn_connect_month',
+            'parent' => 0,
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_learn_connect_month' => array(
+                'tid' => 'field_learn_connect_month_tid',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_learn_connect_month' => array(
+                'tid' => 'field_learn_connect_month_tid',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'tid' => array(
+          'table' => 'taxonomy_term_data',
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+        ),
+      ),
+      'field_name' => 'field_learn_connect_month',
+      'type' => 'taxonomy_term_reference',
+      'module' => 'taxonomy',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'tid' => array(
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_learn_connect_region' => array(
+      'entity_types' => array(),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'learn_connect_regions',
+            'parent' => 0,
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_learn_connect_region' => array(
+                'tid' => 'field_learn_connect_region_tid',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_learn_connect_region' => array(
+                'tid' => 'field_learn_connect_region_tid',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'tid' => array(
+          'table' => 'taxonomy_term_data',
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+        ),
+      ),
+      'field_name' => 'field_learn_connect_region',
+      'type' => 'taxonomy_term_reference',
+      'module' => 'taxonomy',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'tid' => array(
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_learn_connect_year' => array(
+      'entity_types' => array(),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'learn_connect_year',
+            'parent' => 0,
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_learn_connect_year' => array(
+                'tid' => 'field_learn_connect_year_tid',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_learn_connect_year' => array(
+                'tid' => 'field_learn_connect_year_tid',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'tid' => array(
+          'table' => 'taxonomy_term_data',
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+        ),
+      ),
+      'field_name' => 'field_learn_connect_year',
+      'type' => 'taxonomy_term_reference',
+      'module' => 'taxonomy',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'tid' => array(
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_learn_event_listing' => array(
+      'entity_types' => array(),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'event_listing',
+            'parent' => 0,
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_learn_event_listing' => array(
+                'tid' => 'field_learn_event_listing_tid',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_learn_event_listing' => array(
+                'tid' => 'field_learn_event_listing_tid',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'tid' => array(
+          'table' => 'taxonomy_term_data',
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+        ),
+      ),
+      'field_name' => 'field_learn_event_listing',
+      'type' => 'taxonomy_term_reference',
+      'module' => 'taxonomy',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'tid' => array(
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_learn_events' => array(
+      'entity_types' => array(),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'events',
+            'parent' => 0,
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_learn_events' => array(
+                'tid' => 'field_learn_events_tid',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_learn_events' => array(
+                'tid' => 'field_learn_events_tid',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'tid' => array(
+          'table' => 'taxonomy_term_data',
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+        ),
+      ),
+      'field_name' => 'field_learn_events',
+      'type' => 'taxonomy_term_reference',
+      'module' => 'taxonomy',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'tid' => array(
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_month' => array(
+      'entity_types' => array(),
+      'indexes' => array(),
+      'settings' => array(
+        'cache_count' => 4,
+        'cache_enabled' => 0,
+        'granularity' => array(
+          'day' => 0,
+          'hour' => 0,
+          'minute' => 0,
+          'month' => 'month',
+          'second' => 0,
+          'year' => 'year',
+        ),
+        'timezone_db' => '',
+        'todate' => '',
+        'tz_handling' => 'none',
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_month' => array(
+                'value' => 'field_month_value',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_month' => array(
+                'value' => 'field_month_value',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'field_name' => 'field_month',
+      'type' => 'datetime',
+      'module' => 'date',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'datetime',
+          'mysql_type' => 'datetime',
+          'pgsql_type' => 'timestamp without time zone',
+          'sqlite_type' => 'varchar',
+          'sqlsrv_type' => 'smalldatetime',
+          'not null' => FALSE,
+          'sortable' => TRUE,
+          'views' => TRUE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_note' => array(
+      'entity_types' => array(),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'settings' => array(
+        'max_length' => 255,
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_note' => array(
+                'value' => 'field_note_value',
+                'format' => 'field_note_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_note' => array(
+                'value' => 'field_note_value',
+                'format' => 'field_note_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'field_name' => 'field_note',
+      'type' => 'text',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_registration_url' => array(
+      'entity_types' => array(),
+      'indexes' => array(),
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'rel' => '',
+          'target' => 'default',
+        ),
+        'display' => array(
+          'url_cutoff' => 80,
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => 128,
+        'title_value' => '',
+        'url' => 0,
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_registration_url' => array(
+                'url' => 'field_registration_url_url',
+                'title' => 'field_registration_url_title',
+                'attributes' => 'field_registration_url_attributes',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_registration_url' => array(
+                'url' => 'field_registration_url_url',
+                'title' => 'field_registration_url_title',
+                'attributes' => 'field_registration_url_attributes',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'field_name' => 'field_registration_url',
+      'type' => 'link_field',
+      'module' => 'link',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'url' => array(
+          'type' => 'varchar',
+          'length' => 2048,
+          'not null' => FALSE,
+          'sortable' => TRUE,
+        ),
+        'title' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+          'sortable' => TRUE,
+        ),
+        'attributes' => array(
+          'type' => 'text',
+          'size' => 'medium',
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+    'field_save_to_calender' => array(
+      'entity_types' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'settings' => array(
+        'allowed_values' => array(
+          0 => 'no',
+          1 => 'yes',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_save_to_calender' => array(
+                'value' => 'field_save_to_calender_value',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_save_to_calender' => array(
+                'value' => 'field_save_to_calender_value',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'field_name' => 'field_save_to_calender',
+      'type' => 'list_boolean',
+      'module' => 'list',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'int',
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'post_secondary_pd',
+        ),
+      ),
+    ),
+  ),
+  'instances' => array(
+    'body' => array(
+      0 => array(
+        'default_value' => NULL,
+        'description' => '',
+        'display' => array(
+          'default' => array(
+            'label' => 'hidden',
+            'type' => 'text_default',
+            'weight' => '9',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'hidden',
+            'type' => 'hidden',
+            'weight' => '53',
+            'settings' => array(),
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'hidden',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 5,
+          ),
+          'teaser' => array(
+            'label' => 'hidden',
+            'module' => 'text',
+            'settings' => array(
+              'trim_length' => 600,
+            ),
+            'type' => 'text_summary_or_trimmed',
+            'weight' => 0,
+          ),
+        ),
+        'label' => 'Body',
+        'required' => FALSE,
+        'settings' => array(
+          'display_summary' => TRUE,
+          'text_processing' => 1,
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'module' => 'text',
+          'settings' => array(
+            'rows' => 20,
+            'summary_rows' => 5,
+          ),
+          'type' => 'text_textarea_with_summary',
+          'weight' => '9',
+        ),
+        'field_name' => 'body',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_choose_options_learnconnec' => array(
+      0 => array(
+        'default_value' => NULL,
+        'description' => 'Choose multiple days,biweekly or weekly.',
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '45',
+            'settings' => array(),
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '44',
+            'settings' => array(),
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'ds_extras_field_template' => '',
+        'label' => 'Choose Options',
+        'required' => 1,
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'options',
+          'settings' => array(),
+          'type' => 'options_select',
+          'weight' => '17',
+        ),
+        'field_name' => 'field_choose_options_learnconnec',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_custom_text' => array(
+      0 => array(
+        'default_value' => NULL,
+        'description' => 'Here you can add custom text.',
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '50',
+            'settings' => array(),
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '36',
+            'settings' => array(),
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'ds_extras_field_template' => '',
+        'label' => 'Custom Text',
+        'required' => 0,
+        'settings' => array(
+          'text_processing' => 0,
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'text',
+          'settings' => array(
+            'size' => 60,
+          ),
+          'type' => 'text_textfield',
+          'weight' => '24',
+        ),
+        'field_name' => 'field_custom_text',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_date_biweekly' => array(
+      0 => array(
+        'description' => 'Enter  Date.Time is in 24 hour format.',
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '48',
+            'settings' => array(),
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '42',
+            'settings' => array(),
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'ds_extras_field_template' => '',
+        'label' => 'Biweekly Date',
+        'required' => 0,
+        'settings' => array(
+          'default_value' => 'now',
+          'default_value2' => 'same',
+          'default_value_code' => '',
+          'default_value_code2' => '',
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'date',
+          'settings' => array(
+            'increment' => 15,
+            'input_format' => 'Y-m-d H:i:s',
+            'input_format_custom' => '',
+            'label_position' => 'above',
+            'text_parts' => array(),
+            'year_range' => '-3:+3',
+          ),
+          'type' => 'date_popup',
+          'weight' => '19',
+        ),
+        'field_name' => 'field_date_biweekly',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_date_multipledays' => array(
+      0 => array(
+        'description' => 'Enter  Date.Time is in 24 hour format.',
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '46',
+            'settings' => array(),
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '43',
+            'settings' => array(),
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'ds_extras_field_template' => '',
+        'label' => 'Multiple Days',
+        'required' => 0,
+        'settings' => array(
+          'default_value' => 'now',
+          'default_value2' => 'same',
+          'default_value_code' => '',
+          'default_value_code2' => '',
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'date',
+          'settings' => array(
+            'increment' => 15,
+            'input_format' => 'Y-m-d H:i:s',
+            'input_format_custom' => '',
+            'label_position' => 'above',
+            'text_parts' => array(),
+            'year_range' => '-3:+3',
+          ),
+          'type' => 'date_popup',
+          'weight' => '18',
+        ),
+        'field_name' => 'field_date_multipledays',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_date_weekly' => array(
+      0 => array(
+        'description' => 'Enter  Date.Time is in 24 hour format.',
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '47',
+            'settings' => array(),
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '45',
+            'settings' => array(),
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'ds_extras_field_template' => '',
+        'label' => 'Weeklty Date',
+        'required' => 0,
+        'settings' => array(
+          'default_value' => 'now',
+          'default_value2' => 'same',
+          'default_value_code' => '',
+          'default_value_code2' => '',
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'date',
+          'settings' => array(
+            'increment' => 15,
+            'input_format' => 'Y-m-d H:i:s',
+            'input_format_custom' => '',
+            'label_position' => 'above',
+            'text_parts' => array(),
+            'year_range' => '-3:+3',
+          ),
+          'type' => 'date_popup',
+          'weight' => '20',
+        ),
+        'field_name' => 'field_date_weekly',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_day1' => array(
+      0 => array(
+        'description' => 'Enter Same Date.',
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '51',
+            'settings' => array(),
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '34',
+            'settings' => array(),
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'label' => 'Day ',
+        'required' => 0,
+        'settings' => array(
+          'default_value' => 'now',
+          'default_value2' => 'same',
+          'default_value_code' => '',
+          'default_value_code2' => '',
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'date',
+          'settings' => array(
+            'increment' => 15,
+            'input_format' => 'Y-m-d H:i:s',
+            'input_format_custom' => '',
+            'label_position' => 'above',
+            'text_parts' => array(),
+            'year_range' => '-3:+3',
+          ),
+          'type' => 'date_popup',
+          'weight' => '22',
+        ),
+        'field_name' => 'field_day1',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_event_script' => array(
+      0 => array(
+        'label' => 'Embedded Script',
+        'widget' => array(
+          'weight' => '15',
+          'type' => 'text_textfield',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'size' => '60',
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '0',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '54',
+            'settings' => array(),
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '41',
+            'settings' => array(),
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+          'learn_connect_side_block' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_event_script',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_events_thumbnails' => array(
+      0 => array(
+        'description' => '',
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '44',
+            'settings' => array(),
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'hidden',
+            'type' => 'image',
+            'weight' => '1',
+            'settings' => array(
+              'image_link' => '',
+              'image_style' => '',
+            ),
+            'module' => 'image',
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'label' => 'Thumbnails',
+        'required' => 0,
+        'settings' => array(
+          'alt_field' => 1,
+          'default_image' => 0,
+          'file_directory' => '',
+          'file_extensions' => 'png gif jpg jpeg',
+          'max_filesize' => '',
+          'max_resolution' => '',
+          'min_resolution' => '',
+          'title_field' => 1,
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'image',
+          'settings' => array(
+            'insert' => 0,
+            'insert_absolute' => 0,
+            'insert_class' => '',
+            'insert_default' => 'auto',
+            'insert_styles' => array(
+              'auto' => 'auto',
+              'icon_link' => 0,
+              'image' => 0,
+              'image_flexslider_full' => 0,
+              'image_flexslider_thumbnail' => 0,
+              'image_home_tabs_image_style' => 0,
+              'image_large' => 0,
+              'image_medium' => 0,
+              'image_thumbnail' => 0,
+              'link' => 0,
+            ),
+            'insert_width' => '',
+            'preview_image_style' => 'thumbnail',
+            'progress_indicator' => 'throbber',
+          ),
+          'type' => 'image_image',
+          'weight' => '12',
+        ),
+        'field_name' => 'field_events_thumbnails',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_learn_connect_body_images' => array(
+      0 => array(
+        'label' => 'Body Images',
+        'widget' => array(
+          'weight' => '10',
+          'type' => 'image_image',
+          'module' => 'image',
+          'active' => 1,
+          'settings' => array(
+            'progress_indicator' => 'throbber',
+            'preview_image_style' => 'thumbnail',
+            'insert' => 1,
+            'insert_absolute' => 1,
+            'insert_styles' => array(
+              'auto' => 'auto',
+              'link' => 0,
+              'icon_link' => 0,
+              'image' => 0,
+              'image_flexslider_full' => 0,
+              'image_flexslider_thumbnail' => 0,
+              'image_home_blog_image_style' => 0,
+              'image_home_tabs_image_style' => 0,
+              'image_large' => 0,
+              'image_medium' => 0,
+              'image_thumbnail' => 0,
+            ),
+            'insert_default' => 'auto',
+            'insert_class' => '',
+            'insert_width' => '',
+          ),
+        ),
+        'settings' => array(
+          'file_directory' => '',
+          'file_extensions' => 'png gif jpg jpeg',
+          'max_filesize' => '',
+          'max_resolution' => '',
+          'min_resolution' => '',
+          'alt_field' => 0,
+          'title_field' => 0,
+          'default_image' => 0,
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '53',
+            'settings' => array(),
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '40',
+            'settings' => array(),
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+          'learn_connect_side_block' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'field_name' => 'field_learn_connect_body_images',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_learn_connect_category' => array(
+      0 => array(
+        'default_value' => NULL,
+        'description' => '',
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '37',
+            'settings' => array(),
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '49',
+            'settings' => array(),
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 21,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'label' => 'Category',
+        'required' => 1,
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'options',
+          'settings' => array(),
+          'type' => 'options_select',
+          'weight' => '27',
+        ),
+        'field_name' => 'field_learn_connect_category',
+        'entity_type' => 'node',
+        'bundle' => 'learn_connect',
+        'deleted' => '0',
+      ),
+    ),
+    'field_learn_connect_cost' => array(
+      0 => array(
+        'default_value' => NULL,
+        'description' => '',
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'weight' => '6',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'inline',
+            'type' => 'text_default',
+            'weight' => '5',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 20,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'label' => 'Cost',
+        'required' => 0,
+        'settings' => array(
+          'text_processing' => 0,
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'text',
+          'settings' => array(
+            'size' => 60,
+          ),
+          'type' => 'text_textfield',
+          'weight' => '6',
+        ),
+        'field_name' => 'field_learn_connect_cost',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_learn_connect_date' => array(
+      0 => array(
+        'description' => '',
+        'display' => array(
+          'default' => array(
+            'label' => 'hidden',
+            'type' => 'addtocal_view',
+            'weight' => '3',
+            'settings' => array(
+              'location_field' => 'field_learn_connect_location',
+              'description_field' => 'body',
+              'past_events' => 0,
+              'format_type' => 'publication_teaser_view_date',
+              'fromto' => 'both',
+              'multiple_number' => '',
+              'multiple_from' => '',
+              'multiple_to' => '',
+            ),
+            'module' => 'addtocal',
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '39',
+            'settings' => array(),
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'label' => 'Date',
+        'required' => 0,
+        'settings' => array(
+          'default_value' => 'now',
+          'default_value2' => 'same',
+          'default_value_code' => '',
+          'default_value_code2' => '',
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'date',
+          'settings' => array(
+            'increment' => 15,
+            'input_format' => 'Y-m-d H:i:s',
+            'input_format_custom' => '',
+            'label_position' => 'above',
+            'text_parts' => array(),
+            'year_range' => '-3:+3',
+          ),
+          'type' => 'date_popup',
+          'weight' => '2',
+        ),
+        'field_name' => 'field_learn_connect_date',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_learn_connect_event_type' => array(
+      0 => array(
+        'default_value' => NULL,
+        'description' => '',
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '40',
+            'settings' => array(),
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '51',
+            'settings' => array(),
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 24,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'label' => 'Event Type',
+        'required' => 1,
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'options',
+          'settings' => array(),
+          'type' => 'options_select',
+          'weight' => '30',
+        ),
+        'field_name' => 'field_learn_connect_event_type',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_learn_connect_file' => array(
+      0 => array(
+        'description' => '',
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '52',
+            'settings' => array(),
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '35',
+            'settings' => array(),
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'label' => 'File',
+        'required' => 0,
+        'settings' => array(
+          'description_field' => 0,
+          'file_directory' => '',
+          'file_extensions' => 'txt pdf doc docx ppt',
+          'max_filesize' => '',
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'file',
+          'settings' => array(
+            'insert' => 0,
+            'insert_absolute' => 0,
+            'insert_class' => '',
+            'insert_default' => 'auto',
+            'insert_styles' => array(
+              'auto' => 'auto',
+              'icon_link' => 0,
+              'image' => 0,
+              'image_flexslider_full' => 0,
+              'image_flexslider_thumbnail' => 0,
+              'image_home_blog_image_style' => 0,
+              'image_home_tabs_image_style' => 0,
+              'image_large' => 0,
+              'image_medium' => 0,
+              'image_thumbnail' => 0,
+              'link' => 0,
+            ),
+            'insert_width' => '',
+            'progress_indicator' => 'throbber',
+          ),
+          'type' => 'file_generic',
+          'weight' => '13',
+        ),
+        'field_name' => 'field_learn_connect_file',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_learn_connect_image' => array(
+      0 => array(
+        'description' => '',
+        'display' => array(
+          'default' => array(
+            'label' => 'hidden',
+            'type' => 'image',
+            'weight' => '8',
+            'settings' => array(
+              'image_link' => '',
+              'image_style' => '',
+            ),
+            'module' => 'image',
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'hidden',
+            'type' => 'hidden',
+            'weight' => '46',
+            'settings' => array(),
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 4,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'label' => 'Image',
+        'required' => 0,
+        'settings' => array(
+          'alt_field' => 1,
+          'default_image' => 0,
+          'file_directory' => '',
+          'file_extensions' => 'png gif jpg jpeg',
+          'max_filesize' => '',
+          'max_resolution' => '',
+          'min_resolution' => '',
+          'title_field' => 1,
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'image',
+          'settings' => array(
+            'insert' => 0,
+            'insert_absolute' => 0,
+            'insert_class' => '',
+            'insert_default' => 'auto',
+            'insert_styles' => array(
+              'auto' => 'auto',
+              'icon_link' => 0,
+              'image' => 0,
+              'image_flexslider_full' => 0,
+              'image_flexslider_thumbnail' => 0,
+              'image_home_tabs_image_style' => 0,
+              'image_large' => 0,
+              'image_medium' => 0,
+              'image_thumbnail' => 0,
+              'link' => 0,
+            ),
+            'insert_width' => '',
+            'preview_image_style' => 'thumbnail',
+            'progress_indicator' => 'throbber',
+          ),
+          'type' => 'image_image',
+          'weight' => '11',
+        ),
+        'field_name' => 'field_learn_connect_image',
+        'entity_type' => 'node',
+        'bundle' => 'learn_connect',
+        'deleted' => '0',
+      ),
+    ),
+    'field_learn_connect_location' => array(
+      0 => array(
+        'label' => 'Venue',
+        'widget' => array(
+          'weight' => '5',
+          'type' => 'text_textfield',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'size' => '60',
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '0',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'settings' => array(),
+            'module' => 'text',
+            'weight' => 55,
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'inline',
+            'type' => 'text_default',
+            'weight' => '4',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+          'learn_connect_side_block' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_learn_connect_location',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_learn_connect_month' => array(
+      0 => array(
+        'default_value' => NULL,
+        'description' => '',
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '38',
+            'settings' => array(),
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '50',
+            'settings' => array(),
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 22,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'label' => 'Month',
+        'required' => 1,
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'options',
+          'settings' => array(),
+          'type' => 'options_select',
+          'weight' => '28',
+        ),
+        'field_name' => 'field_learn_connect_month',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_learn_connect_region' => array(
+      0 => array(
+        'default_value' => NULL,
+        'description' => 'Do not use \'ALL\' in any case.',
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '36',
+            'settings' => array(),
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '48',
+            'settings' => array(),
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'hidden',
+            'module' => 'taxonomy',
+            'settings' => array(),
+            'type' => 'taxonomy_term_reference_plain',
+            'weight' => 3,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'label' => 'Region',
+        'required' => 1,
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'options',
+          'settings' => array(),
+          'type' => 'options_select',
+          'weight' => '26',
+        ),
+        'field_name' => 'field_learn_connect_region',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_learn_connect_year' => array(
+      0 => array(
+        'default_value' => array(
+          0 => array(
+            'tid' => 31,
+          ),
+        ),
+        'description' => '',
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '39',
+            'settings' => array(),
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '52',
+            'settings' => array(),
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 23,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'label' => 'Year',
+        'required' => 1,
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'options',
+          'settings' => array(),
+          'type' => 'options_select',
+          'weight' => '29',
+        ),
+        'field_name' => 'field_learn_connect_year',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_learn_event_listing' => array(
+      0 => array(
+        'default_value' => NULL,
+        'description' => '',
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '41',
+            'settings' => array(),
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'hidden',
+            'type' => 'taxonomy_term_reference_plain',
+            'weight' => '0',
+            'settings' => array(),
+            'module' => 'taxonomy',
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 25,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'label' => 'Event Listing',
+        'required' => 1,
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'options',
+          'settings' => array(),
+          'type' => 'options_select',
+          'weight' => '7',
+        ),
+        'field_name' => 'field_learn_event_listing',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_learn_events' => array(
+      0 => array(
+        'default_value' => NULL,
+        'description' => '',
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '42',
+            'settings' => array(),
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'hidden',
+            'type' => 'taxonomy_term_reference_plain',
+            'weight' => '8',
+            'settings' => array(),
+            'module' => 'taxonomy',
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'hidden',
+            'module' => 'taxonomy',
+            'settings' => array(),
+            'type' => 'taxonomy_term_reference_plain',
+            'weight' => 0,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'label' => 'Events',
+        'required' => 1,
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'options',
+          'settings' => array(),
+          'type' => 'options_select',
+          'weight' => '8',
+        ),
+        'field_name' => 'field_learn_events',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_month' => array(
+      0 => array(
+        'description' => '',
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '49',
+            'settings' => array(),
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '37',
+            'settings' => array(),
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'ds_extras_field_template' => '',
+        'label' => 'Month',
+        'required' => 0,
+        'settings' => array(
+          'default_value' => 'now',
+          'default_value2' => 'same',
+          'default_value_code' => '',
+          'default_value_code2' => '',
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'date',
+          'settings' => array(
+            'increment' => 15,
+            'input_format' => 'Y-m-d H:i:s',
+            'input_format_custom' => '',
+            'label_position' => 'above',
+            'text_parts' => array(),
+            'year_range' => '-3:+3',
+          ),
+          'type' => 'date_popup',
+          'weight' => '23',
+        ),
+        'field_name' => 'field_month',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_note' => array(
+      0 => array(
+        'default_value' => NULL,
+        'description' => '',
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'weight' => '7',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'weight' => '7',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'ds_extras_field_template' => '',
+        'label' => 'Note',
+        'required' => 0,
+        'settings' => array(
+          'text_processing' => 0,
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'text',
+          'settings' => array(
+            'size' => 60,
+          ),
+          'type' => 'text_textfield',
+          'weight' => '4',
+        ),
+        'field_name' => 'field_note',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_registration_url' => array(
+      0 => array(
+        'default_value' => NULL,
+        'description' => '',
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '43',
+            'settings' => array(),
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '47',
+            'settings' => array(),
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'label' => 'Registration url',
+        'required' => 0,
+        'settings' => array(
+          'absolute_url' => 1,
+          'attributes' => array(
+            'class' => '',
+            'configurable_class' => 0,
+            'configurable_title' => 0,
+            'rel' => '',
+            'target' => 'default',
+            'title' => '_blank',
+          ),
+          'display' => array(
+            'url_cutoff' => 80,
+          ),
+          'enable_tokens' => 1,
+          'rel_remove' => 'default',
+          'title' => 'optional',
+          'title_label_use_field_label' => 0,
+          'title_maxlength' => 128,
+          'title_value' => '',
+          'url' => 0,
+          'user_register_form' => FALSE,
+          'validate_url' => 1,
+        ),
+        'widget' => array(
+          'active' => 0,
+          'module' => 'link',
+          'settings' => array(),
+          'type' => 'link_field',
+          'weight' => '14',
+        ),
+        'field_name' => 'field_registration_url',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+    'field_save_to_calender' => array(
+      0 => array(
+        'default_value' => array(
+          0 => array(
+            'value' => 0,
+          ),
+        ),
+        'description' => 'Check this field if you want the end users to save this event to their calendars.',
+        'display' => array(
+          'default' => array(
+            'label' => 'hidden',
+            'type' => 'list_default',
+            'weight' => '4',
+            'settings' => array(),
+            'module' => 'list',
+          ),
+          'learn_connect_page_view' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '38',
+            'settings' => array(),
+          ),
+          'learn_connect_side_block' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'settings' => array(),
+            'type' => 'hidden',
+            'weight' => 0,
+          ),
+        ),
+        'ds_extras_field_template' => '',
+        'label' => 'Save to Calender',
+        'required' => 0,
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'widget' => array(
+          'active' => 1,
+          'module' => 'options',
+          'settings' => array(
+            'display_label' => 1,
+          ),
+          'type' => 'options_onoff',
+          'weight' => '3',
+        ),
+        'field_name' => 'field_save_to_calender',
+        'entity_type' => 'node',
+        'bundle' => 'post_secondary_pd',
+        'deleted' => '0',
+      ),
+    ),
+  ),
+  'fieldgroups' => array(
+    'group_filtering_info|node|post_secondary_pd|form' => (object) array(
+      'id' => '4',
+      'identifier' => 'group_filtering_info|node|post_secondary_pd|form',
+      'group_name' => 'group_filtering_info',
+      'entity_type' => 'node',
+      'bundle' => 'post_secondary_pd',
+      'mode' => 'form',
+      'parent_name' => '',
+      'table' => 'field_group',
+      'type' => 'Overridden',
+      'export_type' => 3,
+      'disabled' => FALSE,
+      'export_module' => 'hriaweb_events',
+      'label' => 'Filtering Information',
+      'weight' => '16',
+      'children' => array(
+        0 => 'field_learn_connect_region',
+        1 => 'field_learn_connect_category',
+        2 => 'field_learn_connect_month',
+        3 => 'field_learn_connect_year',
+        4 => 'field_learn_connect_event_type',
+      ),
+      'format_type' => 'div',
+      'format_settings' => array(
+        'formatter' => 'open',
+        'instance_settings' => array(
+          'description' => '',
+          'show_label' => 1,
+          'label_element' => 'h3',
+          'effect' => 'none',
+          'speed' => 'fast',
+          'classes' => 'group-filtering-info field-group-div',
+          'required_fields' => 1,
+          'id' => '',
+        ),
+      ),
+    ),
+    'group_options_learnconnect|node|post_secondary_pd|form' => (object) array(
+      'id' => '5',
+      'identifier' => 'group_options_learnconnect|node|post_secondary_pd|form',
+      'group_name' => 'group_options_learnconnect',
+      'entity_type' => 'node',
+      'bundle' => 'post_secondary_pd',
+      'mode' => 'form',
+      'parent_name' => '',
+      'table' => 'field_group',
+      'type' => 'Overridden',
+      'export_type' => 3,
+      'export_module' => 'hriaweb_events',
+      'label' => 'Choose Options',
+      'weight' => '1',
+      'children' => array(
+        0 => 'field_choose_options_learnconnec',
+        1 => 'field_custom_text',
+        2 => 'field_date_biweekly',
+        3 => 'field_date_multipledays',
+        4 => 'field_date_weekly',
+        5 => 'field_month',
+        6 => 'field_day1',
+      ),
+      'format_type' => 'fieldset',
+      'format_settings' => array(
+        'formatter' => 'collapsible',
+        'instance_settings' => array(
+          'description' => '',
+          'classes' => 'group-options-learnconnect field-group-fieldset',
+          'required_fields' => 1,
+        ),
+      ),
+    ),
+  ),
+);
