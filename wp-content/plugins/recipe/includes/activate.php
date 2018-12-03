@@ -5,18 +5,22 @@ function r_activate_plugin() {
   }
 
   global $wpdb;
-
-
-
-
   $createSQL = "CREATE TABLE `wp_recipe_ratings`
   ( `ID` INT NOT NULL AUTO_INCREMENT , 
   `recipe_id` INT NOT NULL ,
-   `rating` FLOAT NOT NULL ,
-    `user_ip` VARCHAR(32) NOT NULL ,
-     PRIMARY KEY (`ID`)) ENGINE = InnoDB;";
+  `rating` FLOAT NOT NULL ,
+  `user_ip` VARCHAR(32) NOT NULL ,
+   PRIMARY KEY (`ID`)) ENGINE = InnoDB;";
 
   require_once( ABSPATH .'/wp-admin/includes/upgrade.php');
 
   dbDelta($createSQL);
+
+  wp_schedule_event(
+    time(),
+    'daily',
+    'r_daily_recipe_hook'
+  );
+
+
 }
