@@ -26,7 +26,7 @@ function r_rate_recipe() {
 
 
   $recipe_data = get_post_meta($post_id ,'recipe_data',true);
-  //$recipe_data['rating_count']++;
+  $recipe_data['rating_count']++;
   $recipe_data['rating'] = $wpdb->get_var("SELECT AVG(`rating`) FROM `wp_recipe_ratings` WHERE recipe_id ='".$post_id."'");
 
   update_post_meta($post_id,'recipe_data',$recipe_data);

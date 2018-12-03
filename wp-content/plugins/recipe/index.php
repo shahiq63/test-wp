@@ -24,6 +24,8 @@ include ('includes/process/save-post.php');
 include ('includes/process/filter-content.php');
 include ('includes/front/enqueue.php');
 include ('includes/process/rate-recipe.php');
+include (dirname(RECIPE_PLUGIN_URL).'/includes/widgets.php');
+include ('includes/widgets/daily-recipe.php');
 
 //Hooks
 
@@ -35,6 +37,6 @@ add_action('the_content','r_filter_recipe_content');
 add_action('wp_enqueue_scripts','r_styles_add',100);
 add_action('wp_ajax_r_rate_recipe','r_rate_recipe');
 add_action('wp_ajax_nopriv_r_rate_recipe','r_rate_recipe');
-
+add_action('widgets_init','r_widgets_init');
 
 //ShortCodes
