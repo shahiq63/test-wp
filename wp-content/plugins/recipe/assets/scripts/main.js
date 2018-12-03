@@ -10,8 +10,6 @@ jQuery(function($){
 
     $.post(recipe_obj.ajax_url,form,function(data){
 
-
-
     });
   });
 });
