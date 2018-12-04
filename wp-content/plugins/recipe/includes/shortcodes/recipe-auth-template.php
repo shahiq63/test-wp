@@ -1,5 +1,6 @@
 NONCE_FIELD_PH
 <div id="#register-status"></div>
+<div id="#login-status"></div>
 
 <div class="col_one_third nobottommargin">
   <div class="well well-lg nobottommargin">
@@ -20,7 +21,7 @@ NONCE_FIELD_PH
     </form>
   </div>
 </div>
-<div class="col_two_third col_last nobottommargin">
+<div class="col_two_third col_last nobottommargin" SHOW_REG_FORM>
   <h3>Dont have an Account? Register Now.</h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, vel odio non dicta provident sint ex autem mollitia dolorem illum repellat ipsum aliquid illo similique sapiente fugiat minus ratione.</p>
   <div id="register-status"></div>

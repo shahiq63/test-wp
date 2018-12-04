@@ -4,5 +4,11 @@ function r_recipe_auth_form_shortcode() {
   $formHTML = file_get_contents('recipe-auth-template.php',true);
   
   $formHTML = str_replace( "NONCE_FIELD_PH" , wp_nonce_field('recipe_auth','_wpnonce',true,false) , $formHTML);
+
+  $formHTML = str_replace(
+    "SHOW_REG_FORM",
+    !get_option('users_can_register') ? 'style="display:none;"' : '',
+    $formHTML
+  );
   return $formHTML;
 }
