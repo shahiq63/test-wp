@@ -35,6 +35,7 @@ include ('includes/process/create-account.php');
 include ('includes/process/login.php');
 include ('includes/admin/menus.php');
 include ('includes/admin/options-page.php');
+include ('includes/process/save-options.php');
 
 
 //Hooks
