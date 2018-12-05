@@ -33,6 +33,8 @@ include ('includes/process/submit-user-recipe.php');
 include ('includes/shortcodes/recipe-auth-form.php');
 include ('includes/process/create-account.php');
 include ('includes/process/login.php');
+include ('includes/admin/menus.php');
+include ('includes/admin/options-page.php');
 
 
 //Hooks
@@ -53,6 +55,7 @@ add_action( 'wp_ajax_r_submit_user_recipe', 'r_submit_user_recipe' );
 add_action( 'wp_ajax_nopriv_r_submit_user_recipe', 'r_submit_user_recipe' );
 add_action( 'wp_ajax_nopriv_recipe_create_account', 'recipe_create_account' );
 add_action( 'wp_ajax_nopriv_recipe_user_login', 'recipe_user_login' );
+add_action('admin_menu','r_admin_menus');
 
 //ShortCodes
 
